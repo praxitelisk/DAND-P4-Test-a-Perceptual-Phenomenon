@@ -11775,7 +11775,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Analyzing-the-Stroop-Effect,">Analyzing the Stroop Effect,<a class="anchor-link" href="#Analyzing-the-Stroop-Effect,">&#182;</a></h1><h4 id="Udacity,-Data-Analyst-Nanodegree,-Project:-Test-a-perpetual-Phenomenon">Udacity, Data Analyst Nanodegree, Project: Test a perpetual Phenomenon<a class="anchor-link" href="#Udacity,-Data-Analyst-Nanodegree,-Project:-Test-a-perpetual-Phenomenon">&#182;</a></h4><p><strong>Praxitelis-Nikolaos Kouroupetroglou</strong></p>
+<h1 id="Analyzing-the-Stroop-Effect,">Analyzing the Stroop Effect,<a class="anchor-link" href="#Analyzing-the-Stroop-Effect,">&#182;</a></h1><h4 id="Udacity,-Data-Analyst-Nanodegree,-Project:-Test-a-perceptual-Phenomenon">Udacity, Data Analyst Nanodegree, Project: Test a perceptual Phenomenon<a class="anchor-link" href="#Udacity,-Data-Analyst-Nanodegree,-Project:-Test-a-perceptual-Phenomenon">&#182;</a></h4><p><strong>Praxitelis-Nikolaos Kouroupetroglou</strong></p>
 <hr>
 <h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>This project explore the Stroop Effect, The Stroop Effect is named by the John Ridley Stroop who first published the effect in English in 1935. In summary this effect explores has 2 experiments, the first one measures the time it takes for an individual to identify the name of a color (e.g., "blue", "green", or "red") that is printed in a color which that is denoted by its name (for example, the word "blue" printed in blue), and the second experiment measures the time it take for an individual to identify the name of a color that is printed in a color which is not denoted by its name (for example, the word "blue" printed in red and not in blue). naming the color of the word takes longer and is more prone to errors than when the color of the ink matches the name of the color <a href="https://en.wikipedia.org/wiki/Stroop_effect">reference</a>.</p>
 <p>This project comes with a dataset in csv format which can be found in this <a href="https://docs.google.com/document/d/1-OkpZLjG_kX9J6LIQ5IltsqMzVWjh36QpnP2RYpVdPU/pub?embedded=True">link</a>. The dataset contains 2 colunms which contains the time it took to a sample of people to finish the Stroop Effect test to identify to color name. The dataset has 2 columns; the first one is called "Conguent" which contains the time it took to each participant to identify the color names which matched to the printed text and the second one is called "Inconguent" which means the time it took to each participant to indentify the name of the color which did not match to the printed text <a href="https://docs.google.com/document/d/1-OkpZLjG_kX9J6LIQ5IltsqMzVWjh36QpnP2RYpVdPU/pub?embedded=True">reference</a>.</p>
@@ -11839,13 +11839,14 @@ Dependent variable : the time it takes to name the colors</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#import libraries</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 </pre></div>
 
@@ -11856,7 +11857,7 @@ Dependent variable : the time it takes to name the colors</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># read csv file and save to df</span>
@@ -11897,7 +11898,7 @@ Dependent variable : the time it takes to name the colors</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[81]:</div>
+<div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -12004,7 +12005,7 @@ Dependent variable : the time it takes to name the colors</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[191]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Congruent colors and words histogram</span>
@@ -12025,7 +12026,7 @@ Dependent variable : the time it takes to name the colors</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[191]:</div>
+<div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -12065,7 +12066,7 @@ Dependent variable : the time it takes to name the colors</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[190]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Incongruent colors and words histogram</span>
@@ -12086,7 +12087,7 @@ Dependent variable : the time it takes to name the colors</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[190]:</div>
+<div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -12126,7 +12127,7 @@ Dependent variable : the time it takes to name the colors</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[192]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Congruent and Incongruent colors and words boxplots</span>
@@ -12145,7 +12146,7 @@ Dependent variable : the time it takes to name the colors</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[192]:</div>
+<div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -12186,7 +12187,7 @@ Dependent variable : the time it takes to name the colors</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[193]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Congruent colors and words histograms side by side</span>
@@ -12209,7 +12210,7 @@ Dependent variable : the time it takes to name the colors</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[193]:</div>
+<div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -12258,7 +12259,7 @@ Dependent variable : the time it takes to name the colors</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[196]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Performing the statistical test</span>
@@ -12323,7 +12324,7 @@ p-value: 4e-08
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[202]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## step by step computations</span>
@@ -12340,7 +12341,7 @@ p-value: 4e-08
 <span class="n">margin_of_error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">t_critical</span> <span class="o">*</span> <span class="n">std_error</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;margin of error:&quot;</span><span class="p">,</span> <span class="n">margin_of_error</span><span class="p">)</span>
 
-<span class="c1"># compute mannually the t-statistic, t = Point_of_interest/(std_error/√n)</span>
+<span class="c1"># compute manually the t-statistic, t = Point_of_interest/(std_error/√n)</span>
 <span class="n">t_statistic_manually_computed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">point_of_interest</span><span class="o">/</span><span class="p">(</span><span class="n">std_error</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Congruent</span><span class="o">.</span><span class="n">count</span><span class="p">())),</span> <span class="mi">3</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;t-statistic:&quot;</span><span class="p">,</span> <span class="n">t_statistic_manually_computed</span><span class="p">)</span>
 
